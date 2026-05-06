@@ -13,6 +13,49 @@
         background: #f4f5f7;
         margin: 0;
     }
+    .navbar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    
+    }
+
+    .navbar h1 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+    }
+
+    .nav-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.2s ease;
+    }
+    .nav-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
 
     .wrapper {
         display: flex;
@@ -66,7 +109,7 @@
     .button-group {
         display: flex;
         gap: 12px;
-        margin-bottom: 25px; /* space before output */
+        margin-bottom: 25px; 
     }
 
     button {
@@ -119,12 +162,28 @@
         border: 1px solid #eee;
         line-height: 1.6;
     }
+    footer {
+        position: fixed;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 12px;
+        color: gray;
+        opacity: 0.7;
+        letter-spacing: 0.5px;
+    }
 </style>
 </head>
 <body>
     <body>
     <h1>Grade 10 Classmates System</h1>
     <p>Add and view your classmates easily</p>
+
+    <div class="nav-links">
+        <a href=".html" class="nav-btn signup">Sign Up</a>
+        <a href="index.html" class="nav-btn team">Team Checker</a>
+        <a href="players.html" class="nav-btn players">Players</a>
+    </div>
 
     <input type="text" id="name" placeholder="Enter name">
     <input type="text" id="section" placeholder="Enter section">
@@ -137,5 +196,9 @@
 
 
     <py-script src="main.py"></py-script>
+<footer class="footer">
+    Erin Gayle Antes, Keisha May Dellejero | 10-Emerald
+</footer>
+
 </body>
 </html>
