@@ -2,7 +2,7 @@ from pyscript import document
 
 photos = [
     {"name": "Teachers Day", "desc": "We luv sir Calpo!", "img": "copy of IMG_5349.CR3"}, 
-    {"name": "Christmas Party", "desc": "Omg green "img": "copy of IMG_5708.JPG"}, 
+    {"name": "Christmas Party", "desc": "Omg green", "img": "copy of IMG_5708.JPG"}, 
     {"name": "Food Fair", "desc": "Coco to my jam!", "img": "DSC00175.JPG"}, 
 ]
 
