@@ -10,19 +10,19 @@ def add_data(event):
     log = document.getElementById("log")
 
     if absence == "":
-        log.innerHTML = "⚠️ Please enter a number"
+        log.innerHTML = "Please enter a number"
         return
 
     attendance[day] = int(absence)
 
-    log.innerHTML = f"✅ Added: {day} - {absence} absences"
+    log.innerHTML = f"Added: {day} - {absence} absences"
 
 
 def show_graph(event):
     graph = document.getElementById("graph")
 
     if len(attendance) == 0:
-        document.getElementById("log").innerHTML = "⚠️ No data to display"
+        document.getElementById("log").innerHTML = "No data to display"
         return
         
     graph.innerHTML = ""
