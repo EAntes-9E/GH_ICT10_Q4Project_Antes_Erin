@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <title>Classmate Introduction</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f5f7;
+        margin: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px; 
+    }
+
+    .container {
+        background: #ffffff;
+        padding: 35px 30px;
+        border-radius: 16px;
+        width: 380px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+        margin: 0 0 6px;
+        font-size: 24px;
+        color: #111;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 25p
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        padding: 13px;
+        border-radius: 10px;
+        border: 1px solid #e5e5e5;
+        background: #fafafa;
+        font-size: 14px;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #ccc;
+        background: #fff;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 25px; /* space before output */
+    }
+
+    button {
+        flex: 1;
+        padding: 13px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .add-btn {
+        background: #111;
+        color: #fff;
+    }
+
+    .add-btn:hover {
+        background: #333;
+    }
+
+    .show-btn {
+        background: #eaeaea;
+        color: #333;
+    }
+
+    .show-btn:hover {
+        background: #dcdcdc;
+    }
+
+    .output-container {
+        margin-top: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .output-container h3 {
+        margin: 0 0 12px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    #output {
+        font-size: 14px;
+        max-height: 160px;
+        overflow-y: auto;
+        background: #fafafa;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        line-height: 1.6;
+    }
+</style>
+</head>
+<body>
+    <body>
+    <h1>Grade 10 Classmates System</h1>
+    <p>Add and view your classmates easily</p>
+
+    <input type="text" id="name" placeholder="Enter name">
+    <input type="text" id="section" placeholder="Enter section">
+    <input type="text" id="subject" placeholder="Favorite subject">
+
+    <button class="add-btn" py-click="add_classmate">Add Classmate</button>
+    <button class="show-btn" py-click="show_classmates">Show List</button>
+
+    <div id="output"></div>
+
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
